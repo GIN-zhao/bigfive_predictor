@@ -1,6 +1,9 @@
 import openai
 import json
 import re
+import json
+import re
+
 
 def get_big_five_scores(text):
     
@@ -78,3 +81,6 @@ if __name__ == "__main__":
     input_text = "Player3的发言暂时可以认好，大家别急着踩他。平安夜信息量少，狼人肯定在搅混水，注意谁急着分票。守卫女巫自己判断要不要藏，预言家该跳的时候自然会跳，咱们稳扎稳打别送轮次"
     output = analyze_game_text(input_text)
     print(json.dumps(output, ensure_ascii=False, indent=4))
+
+
+    
