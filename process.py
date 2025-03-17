@@ -3,7 +3,11 @@ import re
 import copy  # 引入copy模块用于深拷贝
 
 def extract_phase_speeches(content):
-    phases = {'daytime': {}, 'night': {}}  # 分别存储白天和夜晚的内容
+    phases = {"role_truth":[],'daytime': {}, 'night': {}}  # 分别存储白天和夜晚的内容
+    
+
+    pattern = r"\*\*Moderator \(-> Player (\d+)\)\*\*: 你是 (\w+)！"
+    
     current_phase_type = None  # 当前阶段类型：daytime或night
     current_phase_num = None   # 当前阶段编号
     current_player = None      # 当前玩家
@@ -13,6 +17,15 @@ def extract_phase_speeches(content):
     lines = content.split('\n')
     
     for line in lines:
+        matches = re.findall(pattern, line)
+        print(matches)
+        # 将匹配结果转换为字典
+        players_roles = {int(player): role for player, role in matches}
+
+        # 打印结果
+        for player, role in sorted(players_roles.items()):
+            # print(f"Player {player}: {role}")
+            phases["role_truth"].append(role)
         # 检测阶段开始 (白天/夜晚)
         if line.startswith('**Moderator (-> all)**: 现在是'):
             if match := re.search(r'(daytime|night)-(\d+)', line):
@@ -50,7 +63,11 @@ def extract_phase_speeches(content):
                     # 使用深拷贝存储final_speech
                     print(f'{current_phase_type},{key},{current_player},{final_speech}')
                     if phases[current_phase_type][key].get(current_player) is None:
-                        phases[current_phase_type][key][current_player] = copy.deepcopy(final_speech)
+                        phases[current_phase_type][key][current_player] = {}
+                        phases[current_phase_type][key][current_player]['content'] = copy.deepcopy(final_speech)[0]
+                    else:
+                        phases[current_phase_type][key][current_player]['vote']= copy.deepcopy(final_speech)[0]
+                        
                 final_speech = []  # 清空final_speech
             else:
                 clean_line = line.strip()
