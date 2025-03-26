@@ -1,0 +1,101 @@
+question:I am the life of the party. 
+ answer:2
+question:I don't talk a lot. 
+ answer:2
+question:I feel comfortable around people. 
+ answer:4
+question:I keep in the background. 
+ answer:2
+question:I start conversations. 
+ answer:3
+question:I have little to say. 
+ answer:2
+question:I talk to a lot of different people at parties. 
+ answer:3
+question:I don't like to draw attention to myself. 
+ answer:2
+question:I don't mind being the center of attention. 
+ answer:3
+question:I am quiet around strangers. 
+ answer:3
+question:I get stressed out easily. 
+ answer:2
+question:I am relaxed most of the time. 
+ answer:3
+question:I worry about things. 
+ answer:3
+question:I seldom feel blue. 
+ answer:4
+question:I am easily disturbed. 
+ answer:2
+question:I get upset easily. 
+ answer:2
+question:I change my mood a lot. 
+ answer:3
+question:I have frequent mood swings. 
+ answer:2
+question:I get irritated easily. 
+ answer:2
+question:I often feel blue. 
+ answer:2
+question:I feel little concern for others. 
+ answer:2
+question:I am interested in people. 
+ answer:4
+question:I insult people. 
+ answer:1
+question:I sympathize with others' feelings. 
+ answer:4
+question:I am not interested in other people's problems. 
+ answer:2
+question:I have a soft heart. 
+ answer:3
+question:I am not really interested in others. 
+ answer:2
+question:I take time out for others. 
+ answer:4
+question:I feel others' emotions. 
+ answer:4
+question:I make people feel at ease. 
+ answer:4
+question:I am always prepared. 
+ answer:3
+question:I leave my belongings around. 
+ answer:2
+question:I pay attention to details. 
+ answer:4
+question:I make a mess of things. 
+ answer:2
+question:I get chores done right away. 
+ answer:3
+question:I often forget to put things back in their proper place. 
+ answer:2
+question:I like order. 
+ answer:4
+question:I shirk my duties. 
+ answer:1
+question:I follow a schedule. 
+ answer:3
+question:I am exacting in my work. 
+ answer:3
+question:I have a rich vocabulary. 
+ answer:3
+question:I have difficulty understanding abstract ideas. 
+ answer:2
+question:I have a vivid imagination. 
+ answer:3
+question:I am not interested in abstract ideas. 
+ answer:3
+question:I have excellent ideas. 
+ answer:3
+question:I do not have a good imagination. 
+ answer:3
+question:I am quick to understand things. 
+ answer:4
+question:I use difficult words. 
+ answer:2
+question:I spend time reflecting on things. 
+ answer:4
+question:I am full of ideas. 
+ answer:3
+{'EXT': 34, 'EST': 29, 'AGR': 22, 'CSN': 37, 'OPN': 34}

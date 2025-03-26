@@ -2,7 +2,25 @@ import openai
 import json
 import re
 from tqdm import tqdm
+"""
 
+
+curl --request POST \
+  --url https://api.cloudflare.com/client/v4/accounts/ef10fe0fd05b5f5bb71ad1a505b970fb/ai/v1/chat/completions \
+  --header "Authorization: Bearer ogGd5Pyvc_97cS6iaXVILPRDuj_qMt_wZcNYvmCA" \
+  --header "Content-Type: application/json" \
+  --data '
+    {
+      "model": "@cf/meta/llama-3.1-8b-instruct",
+      "messages": [
+        {
+          "role": "user",
+          "content": "how to build a wooden spoon in 3 short steps? give as short as answer as possible"
+        }
+      ]
+    }
+'
+"""
 # def get_big_five_scores(text):
 #     """
 #     分析文本并返回大五人格的5x6数组分数。
